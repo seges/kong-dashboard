@@ -28,7 +28,7 @@
       case 'basic-auth-credential':
         vm.title = resource ? 'Update credential' : 'Create basic auth credential for Consumer "' + (parent.username || parent.custom_id) + '"';
         delete vm.schema.properties.consumer_id;
-        vm.resource.consumer_id = parent.id;
+        //vm.resource.consumer_id = parent.id;
         break;
       case 'certificate':
         vm.title = resource ? 'Update Certificate' : 'Create Certificate';
